@@ -1,4 +1,6 @@
+# Algorythm
 
+Ryzhenko Alexandr Anatolievich
 ```shell
 pip install pipenv
 ```
