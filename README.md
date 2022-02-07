@@ -1,3 +1,6 @@
+# Algorythm
+
+Antipov Matvey Andreevich 
 
 ```shell
 pip install pipenv
