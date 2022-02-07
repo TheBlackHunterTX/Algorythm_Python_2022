@@ -1,3 +1,5 @@
+# Algorythm
+Golubeva Polina
 
 ```shell
 pip install pipenv
