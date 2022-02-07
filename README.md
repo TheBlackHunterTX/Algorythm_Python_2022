@@ -1,4 +1,6 @@
+# Algorithm
 
+Starshinov Ilya Antonovich
 ```shell
 pip install pipenv
 ```
