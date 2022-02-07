@@ -1,4 +1,6 @@
+# Algorythm
 
+Zaripov Ilya Dmitrievich
 ```shell
 pip install pipenv
 ```
