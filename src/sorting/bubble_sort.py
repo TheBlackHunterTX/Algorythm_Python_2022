@@ -11,11 +11,15 @@
 """
 
 def bubble_sort():
-    n = input()
-    inp_string = input()
-    str_lst = inp_string.split(" ")
-    print(str_lst)
+	n=int(input())
+	z=input()
+	a=z.split(' ')
+	for i in range(n-1):
+		for j in range(n-i-1):
+			if a[j]>a[j+1]:
+				a[j], a[j+1] = a[j+1], a[j]
+				print(' '.join(map(str, a)))
+	'''print(' '.join(map(str, a)))'''
 
 if __name__ == "__main__":
-    import doctest
-    doctest.testmod(verbose=True)
+	bubble_sort()
