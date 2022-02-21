@@ -19,7 +19,6 @@ def bubble_sort():
 			if a[j]>a[j+1]:
 				a[j], a[j+1] = a[j+1], a[j]
 				print(' '.join(map(str, a)))
-	'''print(' '.join(map(str, a)))'''
 
 if __name__ == "__main__":
 	bubble_sort()
