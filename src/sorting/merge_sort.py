@@ -26,27 +26,35 @@
 >>> print(merge([2,3,4],[1,2,3]))
 [1, 2, 2, 3, 3, 4]
 """
-
 def merge(A, B):
     res = []
+    count = 0 
+    count1 = 0
+    while count < len(A) and count1 < len(B):
+        if A[count] <= B[count1]:
+            res.append(A[count])
+            count += 1
+        else:
+            res.append(B[count1])
+            count += 1
+    res += A[count:]
+    res += B[count1:]
     return res
 
-def merge_sort(A):
-    if len(A) == 1:
-        return A
-    l = A[0:len(A)//2]
-    r = A[len(A)//2:]
-    l = merge_sort(l)
-    r = merge_sort(r)
-    print("{:d} {:d}".format(r[0], l[-1]))
-    return merge(l, r)
+def merge_sort(A, b, e):
+    if (e - b) == 1:
+        return A[b:e]
+    m = int((b + e) / 2)
+    l = merge_sort(A, b, m)
+    r = merge_sort(A, m, e)
+    mrg = merge(l, r)
+    print(begin + 1, end, merged[0], merged[-1])
+    return merged
 
 def task_merge_sort():
     n = int(input())
-    arr = list(map(int, input().split(" ")))
-    res = merge_sort(arr)
-    print(" ".join(list(map(str,res))))
+    print(*merge_sort(list(map(int, input().split())), 0, n))
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     import doctest
     doctest.testmod(verbose=True)
