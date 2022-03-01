@@ -48,8 +48,8 @@ def merge_sort(A, b, e):
     l = merge_sort(A, b, m)
     r = merge_sort(A, m, e)
     mrg = merge(l, r)
-    print(begin + 1, end, merged[0], merged[-1])
-    return merged
+    print(b + 1, end, mrg[0], mrg[-1])
+    return mrg
 
 def task_merge_sort():
     n = int(input())
